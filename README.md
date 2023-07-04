@@ -14,9 +14,7 @@ you can specify the length of the password
 import 'package:password_maker/password_maker.dart';
 ```
 
-### Depend on it
-
-## Example YAML Configuration
+## Depend on it
 
 ```yaml
 dependencies:
@@ -25,7 +23,7 @@ dependencies:
 
 ## Usage
 
-assign a String for Storing the generated Password, in this case 'temp',then call generatePassWord(length of the password).
+Assign a String for Storing the generated Password, in this case 'temp',then call generatePassWord(length of the password).
 
 ```dart
  late String temp; //initializing a temporary (temp) String
@@ -45,7 +43,7 @@ assign a String for Storing the generated Password, in this case 'temp',then cal
   }
 ```
 
-## ScreenShots from Example
+## ScreenShots from Example App
 
 ![Alt text](Screenshot_2023-07-04-19-18-24-823_com.example.login_sample.jpg)
 ![Alt text](Screenshot_2023-07-04-19-18-02-041_com.example.login_sample.jpg)
