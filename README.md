@@ -1,39 +1,57 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Description
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A package that helps to suggest a strong password at login screen when a new user sign up.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+you can specify the length of the password
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+ Import the package
+
+  ```dart
+import 'package:password_maker/password_maker.dart';
+```
+
+### Depend on it
+
+## Example YAML Configuration
+
+```yaml
+dependencies:
+  password_maker: ^0.0.2
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+assign a String for Storing the generated Password, in this case 'temp',then call generatePassWord(length of the password).
 
 ```dart
-const like = 'sample';
+ late String temp; //initializing a temporary (temp) String
+  @override
+  void initState() {
+    super.initState();
+    temp=generatePassWord(10);//assigning the temp with generatePassword(10), where 10 is the length of the password, 
+    //assigning the temp to the Password controller
+    _PasswordController = TextEditingController(text: temp);
+  }
+
+//disposing the controllers
+  @override
+  void dispose() {
+    _PasswordController.dispose();
+    super.dispose();
+  }
 ```
+
+## ScreenShots from Example
+
+![Alt text](Screenshot_2023-07-04-19-18-24-823_com.example.login_sample.jpg)
+![Alt text](Screenshot_2023-07-04-19-17-57-044_com.example.login_sample.jpg)
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Detailed explanation available in sample App
+Sample app named'login_sample',
+repository= <https://github.com/josephjose1234/login_sample>

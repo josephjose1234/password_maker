@@ -1,22 +1,13 @@
-import 'package:flutter/material.dart';
-// library password_maker;
+import 'dart:math';
 
-// /// A Calculator.
-// class Calculator {
-//   /// Returns [value] plus 1.
-//   int addOne(int value) => value + 1;
-// }
-
-
-class ColoredContainer extends StatelessWidget {
-  final Color color;
-
-  const ColoredContainer({required this.color});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: color,
-    );
+String generatePassWord(int length) {
+   String password='';
+  const String validChars =
+      'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#\$%^&*()';
+  Random random = Random();
+  for (int i = 0; i < length; i++) {
+    int randomIndex = random.nextInt(validChars.length);
+    password += validChars[randomIndex];
   }
+  return password;
 }
