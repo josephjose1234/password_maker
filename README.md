@@ -48,7 +48,7 @@ assign a String for Storing the generated Password, in this case 'temp',then cal
 ## ScreenShots from Example
 
 ![Alt text](Screenshot_2023-07-04-19-18-24-823_com.example.login_sample.jpg)
-![Alt text](Screenshot_2023-07-04-19-17-57-044_com.example.login_sample.jpg)
+![Alt text](Screenshot_2023-07-04-19-18-02-041_com.example.login_sample.jpg)
 
 ## Additional information
 
